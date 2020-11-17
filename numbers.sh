@@ -6,10 +6,10 @@ echo "Type a positive integer: "
 read -r N
 echo ""
 
-for i in $(seq 1 $N)
 
+for i in $(seq 1 "$N")
 do
-  mod=$(( $i % 2 ))
+  mod=$(( i % 2 ))
 
   if [ $mod -eq 0 ]
   then
